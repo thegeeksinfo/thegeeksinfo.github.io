@@ -157,7 +157,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Website**: [https://geekyyouthsinfo.github.io](https://geekyyouthsinfo.github.io)
 - **Email**: thegeeksinformation@gmail.com
 - **Phone**: +256 7706 88802
-- **Address**: TheGeeks Hub, Entebbe
+- **Address**: TheGeeks Hub, Entebbe-Uganda
 
 ### Connect With Us
 
