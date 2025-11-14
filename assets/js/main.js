@@ -331,7 +331,40 @@ function showNotification(message, type = 'info') {
 
 // Counter animation
 function initializeCounters() {
-    // This will be triggered by the intersection observer
+    const statNumbers = document.querySelectorAll('.stat-number');
+    if (statNumbers.length === 0) return;
+
+    const now = new Date();
+
+    statNumbers.forEach(element => {
+        const baseValue = parseInt(element.dataset.base ?? element.dataset.target ?? element.textContent, 10);
+        if (Number.isNaN(baseValue)) {
+            return;
+        }
+
+        const increment = parseInt(element.dataset.increment ?? '0', 10);
+        const startDateAttr = element.dataset.start;
+
+        let computedTarget = baseValue;
+
+        if (startDateAttr && !Number.isNaN(increment) && increment !== 0) {
+            const startDate = new Date(startDateAttr);
+
+            if (!Number.isNaN(startDate.getTime())) {
+                let monthsElapsed = (now.getFullYear() - startDate.getFullYear()) * 12 + (now.getMonth() - startDate.getMonth());
+
+                if (now.getDate() < startDate.getDate()) {
+                    monthsElapsed -= 1;
+                }
+
+                monthsElapsed = Math.max(0, monthsElapsed);
+                computedTarget = baseValue + monthsElapsed * increment;
+            }
+        }
+
+        element.dataset.target = computedTarget;
+        element.textContent = String(computedTarget);
+    });
 }
 
 function animateCounter(element) {
