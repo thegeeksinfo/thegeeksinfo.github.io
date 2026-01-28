@@ -1,91 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="TheGeeksInfo - Bridging the gap between Business and Technology through innovative software engineering services and education">
+    <meta name="description"
+        content="TheGeeksInfo - Bridging the gap between Business and Technology through innovative software engineering services and education">
     <meta name="keywords" content="software engineering, education, training, development, technology, startup">
     <meta name="author" content="TheGeeksInfo">
     <title>TheGeeksInfo</title>
-    
+
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="TheGeeksInfo - Bridging Business & Technology">
-    <meta property="og:description" content="Innovative software engineering services and education that bridges the gap between business and technology">
+    <meta property="og:description"
+        content="Innovative software engineering services and education that bridges the gap between business and technology">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://geekyyouthsinfo.github.io">
     <meta property="og:image" content="https://geekyyouthsinfo.github.io/assets/images/logo300x300.png">
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
-    
+
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="TheGeeksInfo - Bridging Business & Technology">
-    <meta name="twitter:description" content="Innovative software engineering services and education that bridges the gap between business and technology">
+    <meta name="twitter:description"
+        content="Innovative software engineering services and education that bridges the gap between business and technology">
     <meta name="twitter:image" content="https://geekyyouthsinfo.github.io/assets/images/logo300x300.png">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/logo300x300.png">
     <link rel="apple-touch-icon" href="assets/images/logo300x300.png">
-    
+
     <!-- Preload critical images with multiple formats -->
     <link rel="preload" href="assets/images/logo300x300.png" as="image" type="image/png">
-    
+
     <!-- DNS prefetch for faster image loading -->
     <link rel="dns-prefetch" href="//geekyyouthsinfo.github.io">
-    
+
     <!-- Immediate logo preload script with optimization -->
     <script>
         // Preload logo with multiple strategies
-        (function() {
+        (function () {
             // Create image with cache busting only if needed
             var img = new Image();
-            img.onload = function() {
+            img.onload = function () {
                 // Mark logo as successfully preloaded
                 document.documentElement.setAttribute('data-logo-loaded', 'true');
             };
-            img.onerror = function() {
+            img.onerror = function () {
                 // Retry with cache busting if initial load fails
                 var retryImg = new Image();
                 retryImg.src = 'assets/images/logo300x300.png?retry=' + Date.now();
             };
             img.src = 'assets/images/logo300x300.png';
-            
+
             // Preload favicon as well
             var favicon = new Image();
             favicon.src = 'assets/images/logo300x300.png';
         })();
     </script>
-    
+
     <!-- Web App Manifest -->
     <link rel="manifest" href="manifest.json">
-    
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    
+
     <!-- EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animations.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="#home">
-                    <img src="assets/images/logo300x300.png" 
-                         alt="TheGeeksInfo Logo" 
-                         class="logo-image"
-                         width="40" 
-                         height="40"
-                         loading="eager"
-                         decoding="sync"
-                         fetchpriority="high"
-                         onload="this.style.opacity='1'"
-                         onerror="this.style.opacity='0.5'; console.warn('Logo load failed')">
+                    <img src="assets/images/logo300x300.png" alt="TheGeeksInfo Logo" class="logo-image" width="40"
+                        height="40" loading="eager" decoding="sync" fetchpriority="high" onload="this.style.opacity='1'"
+                        onerror="this.style.opacity='0.5'; console.warn('Logo load failed')">
                     <!-- <span>TheGeeksInfo</span> -->
                 </a>
             </div>
@@ -98,9 +96,6 @@
                 </li>
                 <li class="nav-item">
                     <a href="#services" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#programs" class="nav-link">Programs</a>
                 </li>
                 <li class="nav-item">
                     <a href="#portfolio" class="nav-link">Portfolio</a>
@@ -125,15 +120,13 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title animate-fade-in">
-                    Bridging the Gap Between
-                    <span class="gradient-text">Business & Technology</span>
+                    Technology
+                    <span class="gradient-text">that</span>
                 </h1>
                 <p class="hero-subtitle animate-fade-in-delay">
-                    Empowering the next generation of businesses and software engineers to create real products that customers buy, transforming industries with cutting-edge AI solutions, manufacturing expertise, and intelligent automation that goes beyond coding
-                </p>
+                    generates value
                 <div class="hero-buttons animate-fade-in-delay-2">
                     <a href="#services" class="btn-primary">Our Services</a>
-                    <a href="#programs" class="btn-primary">Training Programs</a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -156,48 +149,105 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">About TheGeeksInfo</h2>
-                <p class="section-subtitle">Professional software engineering services that bridge technology with real-world solutions</p>
+                <h2 class="section-title">Who we are</h2>
+                <p class="section-subtitle">A center of expertise that bridges technology with business value</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                   <h3>Our Mission</h3>
-                    <p>TheGeeksInfo is a product engineering consultancy helping organizations transform ideas into resilient software and AI solutions. We translate complex requirements into scalable platforms that improve operations and unlock new growth opportunities.</p>
+                    <p><strong>TheGeeksInfo</strong> is a center of expertise dedicated to the research, development and
+                        application of innovative technologies in AI, IoT and digital transformation.</p>
 
-                    <h3>Our Approach</h3>
-                    <p>We pair senior engineers, product strategists, and industry specialists to design solutions that work in the field. From manufacturing floors to healthcare networks, we embed technology within established processes so digital products deliver measurable business outcomes.</p>
+                    <p>We were founded to accompany companies and public administrations on the path of digital
+                        evolution, transforming the potential of emerging data and technologies into concrete, secure
+                        and sustainable solutions. Our approach integrates scientific research, industrial experience
+                        and strategic vision to deliver projects that combine innovation with measurable impact.</p>
 
-                    <p>We equip clients and trainees with the multidisciplinary skills required to ship market-ready products:</p>
-                    <ul>
-                        <li>Product discovery and validation grounded in customer insights</li>
-                        <li>Modern software delivery leveraging cloud, AI, and automation</li>
-                        <li>Hardware, IoT, and data integrations for physical-digital experiences</li>
-                        <li>Operational readiness covering compliance, security, and lifecycle support</li>
-                    </ul>
+                    <p>We work alongside our partners with a collaborative, result-oriented methodology that prioritizes
+                        experimentation, speed and the measurability of the value generated.</p>
 
-                    <h3>Core Services</h3>
-                    <p>Our team delivers bespoke software platforms, AI-powered applications, and intelligent automation programs that streamline operations and differentiate brands.</p>
+                    <div class="vision-container">
+                        <div class="vision-text">
+                            <h3>Vision</h3>
+                            <p>TheGeeksInfo's vision is to contribute to building an ecosystem where innovation,
+                                technology and responsibility coexist in balance, generating lasting value for people,
+                                businesses and society.</p>
 
-                    <p>Whether building custom AI models that accelerate clinical decision-making or deploying smart agents that optimize production lines, we partner from strategy through launch to ensure every deliverable is production-grade and customer-ready.</p>
-                    
-                    <div class="stats">
-                        <div class="stat">
-                            <span class="stat-number" data-base="24" data-target="24" data-start="2024-01-01" data-increment="1">24</span>
-                            <span class="stat-label">Projects Completed</span>
+                            <p>We aspire to be a reference point in the field of Artificial Intelligence and the
+                                Internet of Things, promoting a model of ethical innovation that is sustainable and
+                                focused on real impact.</p>
+
+                            <p>We imagine a future in which technology amplifies human capabilities, fosters more
+                                informed decisions and accelerates the transition to a digital, connected and inclusive
+                                economy.</p>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number" data-base="150" data-target="150" data-start="2024-01-01" data-increment="1">150</span>
-                            <span class="stat-label">Students Trained</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number" data-base="12" data-target="12" data-start="2024-01-01" data-increment="1">12</span>
-                            <span class="stat-label">Industry Partners</span>
+                        <div class="vision-image">
+                            <img src="assets/images/vision.jpeg" alt="Our Vision">
                         </div>
                     </div>
-                </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-users-cog"></i>
+
+                    <h3>Our Approach</h3>
+                    <p class="section-subtitle">Responsibility, excellence and impact</p>
+                    <p>The identity of TheGeeksInfo is based on three pillars that guide every strategic and design
+                        choice. They represent the values on which the company builds its approach to innovation:
+                        responsibility, excellence and impact. Through these principles, TheGeeksInfo combines
+                        technology, research and ethical vision to generate concrete, sustainable and shared value over
+                        time.</p>
+
+                    <div class="portfolio-grid approach-grid">
+                        <div class="portfolio-item">
+                            <div class="portfolio-image">
+                                <div class="image-placeholder">
+                                    <img src="assets/images/intelligenza-artificiale-nella-PA-2-scaled-2.png"
+                                        alt="Responsible Innovation">
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3>Responsible Innovation</h3>
+                                <p>Each project is born from the encounter between research, creativity and
+                                    responsibility. TheGeeksInfo promotes an approach to innovation that puts ethics,
+                                    transparency and data security at the heart of technological development. The goal
+                                    is to create Artificial Intelligence and IoT solutions that improve people’s lives
+                                    and the competitiveness of organizations, while respecting social and environmental
+                                    values.</p>
+                                <a href="#" class="read-more">Read more</a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item">
+                            <div class="portfolio-image">
+                                <div class="image-placeholder">
+                                    <img src="assets/images/shutterstock_1483438988-2.png"
+                                        alt="Technological Excellence">
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3>Technological Excellence</h3>
+                                <p>The soundness of the skills is the engine of the company. TheGeeksInfo bases its
+                                    activity on research, experimentation and multidisciplinary skills, combining
+                                    engineering, data science, design and strategy. Through agile methodologies and
+                                    industry standards, the company guarantees quality, reliability and scalability in
+                                    every solution, transforming technological complexity into concrete value.</p>
+                                <a href="#" class="read-more">Read more</a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio-item">
+                            <div class="portfolio-image">
+                                <div class="image-placeholder">
+                                    <img src="assets/images/visione-green-fanton-azienda.jpg"
+                                        alt="Impact and Sustainability">
+                                </div>
+                            </div>
+                            <div class="portfolio-content">
+                                <h3>Impact and Sustainability</h3>
+                                <p>Every innovation must generate a real and measurable impact. TheGeeksInfo orients its
+                                    initiatives towards the creation of lasting value, promoting economic, environmental
+                                    and social sustainability. AI and IoT technologies are designed as tools to optimize
+                                    resources, reduce waste and support sustainable growth models for the benefit of the
+                                    production system and the territory.</p>
+                                <a href="#" class="read-more">Read more</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -209,911 +259,637 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Our Services</h2>
-                <p class="section-subtitle">Transforming traditional industries through innovative software engineering and AI solutions</p>
+                <p class="section-subtitle">Transforming traditional industries through innovative software engineering
+                    and AI solutions</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-laptop-code"></i>
+                        <i class="fas fa-lightbulb"></i>
                     </div>
-                    <h3>Custom Software Development</h3>
-                    <p>Tailored software solutions built with modern technologies and industry best practices.</p>
-                    <ul>
-                        <li>Web Applications and sites</li>
-                        <li>Mobile Apps</li>
-                        <li>Desktop Software</li>
-                        <li>API Development</li>
-                    </ul>
+                    <h3>Innovation</h3>
+                    <p>We accompany organizations from strategic vision to realization through ideation, rapid
+                        prototyping and guided experimentation.</p>
                 </div>
-                
+
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-cloud"></i>
+                        <i class="fas fa-network-wired"></i>
                     </div>
-                    <h3>Cloud Solutions</h3>
-                    <p>Scalable cloud infrastructure and migration services for modern businesses.</p>
-                    <ul>
-                        <li>AWS/Azure/GCP</li>
-                        <li>DevOps & CI/CD</li>
-                        <li>Microservices</li>
-                        <li>Containerization</li>
-                    </ul>
+                    <h3>Digitalization</h3>
+                    <p>Digitize business processes, IT infrastructure and user experience to accelerate data-driven,
+                        agile operations.</p>
                 </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Technical Training</h3>
-                    <p>Industry-focused training programs that prepare students for real-world challenges.</p>
-                    <ul>
-                        <li>Bootcamps</li>
-                        <li>Workshops</li>
-                        <li>Mentorship</li>
-                        <li>Certification</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>AI & Machine Learning</h3>
-                    <p>Cutting-edge AI solutions and intelligent automation for modern businesses.</p>
-                    <ul>
-                        <li>Custom AI Models</li>
-                        <li>Natural Language Processing</li>
-                        <li>Computer Vision</li>
-                        <li>Predictive Analytics</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-tags"></i>
-                    </div>
-                    <h3>Data Labeling & Annotation</h3>
-                    <p>High-quality data preparation services for machine learning and AI training.</p>
-                    <ul>
-                        <li>Image Annotation</li>
-                        <li>Text Labeling</li>
-                        <li>Audio Transcription</li>
-                        <li>Quality Assurance</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>AI Agents & Automation</h3>
-                    <p>Intelligent agents and automation solutions to streamline business processes.</p>
-                    <ul>
-                        <li>Chatbots & Virtual Assistants</li>
-                        <li>Process Automation</li>
-                        <li>Intelligent Decision Systems</li>
-                        <li>Multi-Agent Systems</li>
-                    </ul>
-                </div>
-                
+
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-industry"></i>
                     </div>
-                    <h3>Cross-Domain Solutions</h3>
-                    <p>Bridging technology with traditional industries to create innovative, impactful solutions.</p>
-                    <ul>
-                        <li>Biotech & Pharma Systems</li>
-                        <li>Smart Infrastructure</li>
-                        <li>Consumer Device Integration</li>
-                        <li>Industrial Automation</li>
-                    </ul>
+                    <h3>Industrialization</h3>
+                    <p>Pilot-to-scale industrial solutions with repeatability, automation and robust governance for 24/7
+                        operations.</p>
                 </div>
-                
+
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-cube"></i>
+                        <i class="fas fa-robot"></i>
                     </div>
-                    <h3>Product Development & Manufacturing</h3>
-                    <p>End-to-end productionisation services that transform software solutions into market-ready physical products.</p>
-                    <ul>
-                        <li>Hardware-Software Integration</li>
-                        <li>Prototype Development</li>
-                        <li>Manufacturing Partnerships</li>
-                        <li>Go-to-Market Strategy</li>
-                    </ul>
+                    <h3>AI</h3>
+                    <p>Expertise in AI/ML, copilot, generative AI, vision, NLP and analytics to turn data into
+                        actionable insights.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3>IoT</h3>
+                    <p>Sensors, gateways and platforms that collect real‑time field data for monitoring, predictive
+                        maintenance and automation.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Process optimization</h3>
+                    <p>Rethink and simplify business processes using lean, automation and data-driven decisions to
+                        reduce time, cost and error.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Programs Section -->
-    <section id="programs" class="programs">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Training Programs</h2>
-                <p class="section-subtitle">Beyond coding: preparing professionals to transform industries and solve real-world challenges</p>
-            </div>
-            <div class="programs-grid">
-                <div class="program-card">
-                    <div class="program-header">
-                        <h3>Full-Stack Development Bootcamp</h3>
-                        <span class="program-duration">12 Weeks</span>
-                    </div>
-                    <div class="program-content">
-                        <p>Comprehensive training in modern web development technologies and practices.</p>
-                        <div class="program-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">AWS</span>
-                        </div>
-                        <div class="program-features">
-                            <ul>
-                                <li>Real project experience</li>
-                                <li>Industry mentorship</li>
-                                <li>Job placement assistance</li>
-                                <li>Portfolio development</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="program-card">
-                    <div class="program-header">
-                        <h3>AI & Machine Learning Mastery</h3>
-                        <span class="program-duration">16 Weeks</span>
-                    </div>
-                    <div class="program-content">
-                        <p>Master artificial intelligence and machine learning with hands-on projects and real-world applications.</p>
-                        <div class="program-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">TensorFlow</span>
-                            <span class="tech-tag">PyTorch</span>
-                            <span class="tech-tag">OpenAI</span>
-                        </div>
-                        <div class="program-features">
-                            <ul>
-                                <li>Build custom AI models</li>
-                                <li>NLP & Computer Vision</li>
-                                <li>AI agent development</li>
-                                <li>Industry certifications</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="program-card featured">
-                    <div class="program-badge">Most Popular</div>
-                    <div class="program-header">
-                        <h3>Software Engineering Internship</h3>
-                        <span class="program-duration">6 Months</span>
-                    </div>
-                    <div class="program-content">
-                        <p>Work on real client projects while learning industry best practices including AI integration.</p>
-                        <div class="program-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Django</span>
-                            <span class="tech-tag">Docker</span>
-                            <span class="tech-tag">AI/ML</span>
-                        </div>
-                        <div class="program-features">
-                            <ul>
-                                <li>Paid internship</li>
-                                <li>AI project experience</li>
-                                <li>Agile methodology</li>
-                                <li>Code review process</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="program-footer">
-                        <button class="btn-primary apply-now-btn" data-program="Software Engineering Internship">Apply Now</button>
-                    </div>
-                </div>
-                
-                <div class="program-card">
-                    <div class="program-header">
-                        <h3>Data Science & Analytics</h3>
-                        <span class="program-duration">14 Weeks</span>
-                    </div>
-                    <div class="program-content">
-                        <p>Learn data science, analytics, and data labeling techniques for AI-ready datasets.</p>
-                        <div class="program-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">Scikit-learn</span>
-                            <span class="tech-tag">Tableau</span>
-                        </div>
-                        <div class="program-features">
-                            <ul>
-                                <li>Data preprocessing</li>
-                                <li>Statistical analysis</li>
-                                <li>Data visualization</li>
-                                <li>Annotation techniques</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="program-card">
-                    <div class="program-header">
-                        <h3>DevOps & Cloud Certification</h3>
-                        <span class="program-duration">8 Weeks</span>
-                    </div>
-                    <div class="program-content">
-                        <p>Master modern DevOps practices and cloud technologies for AI/ML deployments.</p>
-                        <div class="program-tech">
-                            <span class="tech-tag">Kubernetes</span>
-                            <span class="tech-tag">Jenkins</span>
-                            <span class="tech-tag">Terraform</span>
-                            <span class="tech-tag">MLOps</span>
-                        </div>
-                        <div class="program-features">
-                            <ul>
-                                <li>AI model deployment</li>
-                                <li>Industry certification</li>
-                                <li>Expert instructors</li>
-                                <li>Job guarantee</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="program-card">
-                    <div class="program-header">
-                        <h3>AI Agent Development Workshop</h3>
-                        <span class="program-duration">6 Weeks</span>
-                    </div>
-                    <div class="program-content">
-                        <p>Build intelligent agents and automation systems using cutting-edge AI frameworks.</p>
-                        <div class="program-tech">
-                            <span class="tech-tag">LangChain</span>
-                            <span class="tech-tag">AutoGPT</span>
-                            <span class="tech-tag">Hugging Face</span>
-                            <span class="tech-tag">OpenAI API</span>
-                        </div>
-                        <div class="program-features">
-                            <ul>
-                                <li>Multi-agent systems</li>
-                                <li>Conversational AI</li>
-                                <li>Process automation</li>
-                                <li>Real-world deployment</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="program-card">
-                    <div class="program-header">
-                        <h3>Cross-Domain Tech TheGeeks</h3>
-                        <span class="program-duration">10 Weeks</span>
-                    </div>
-                    <div class="program-content">
-                        <p>Learn to apply software engineering to transform traditional industries beyond coding.</p>
-                        <div class="program-tech">
-                            <span class="tech-tag">Industry IoT</span>
-                            <span class="tech-tag">HealthTech</span>
-                            <span class="tech-tag">ManufacturingAI</span>
-                            <span class="tech-tag">Domain Expertise</span>
-                        </div>
-                        <div class="program-features">
-                            <ul>
-                                <li>Healthcare TheGeeks</li>
-                                <li>Manufacturing optimization</li>
-                                <li>Logistics transformation</li>
-                                <li>Industry partnerships</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="program-card featured">
-                    <div class="program-badge">New</div>
-                    <div class="program-header">
-                        <h3>Tech Product Development & Manufacturing</h3>
-                        <span class="program-duration">16 Weeks</span>
-                    </div>
-                    <div class="program-content">
-                        <p>Master the complete journey from software concept to marketable physical product that customers buy.</p>
-                        <div class="program-tech">
-                            <span class="tech-tag">Hardware Design</span>
-                            <span class="tech-tag">3D Printing</span>
-                            <span class="tech-tag">Supply Chain</span>
-                            <span class="tech-tag">Business Model</span>
-                        </div>
-                        <div class="program-features">
-                            <ul>
-                                <li>Prototype development</li>
-                                <li>Manufacturing processes</li>
-                                <li>Market validation</li>
-                                <li>Product launch strategy</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="program-footer">
-                        <button class="btn-primary apply-now-btn" data-program="Tech Product Development & Manufacturing">Apply Now</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Programs section removed -->
+    <div class="section-header">
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Work</h2>
-                <p class="section-subtitle">Showcasing successful projects and student achievements</p>
-            </div>
-            <div class="portfolio-filter">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web Apps</button>
-                <button class="filter-btn" data-filter="mobile">Mobile</button>
-                <button class="filter-btn" data-filter="ai">AI & ML</button>
-                <button class="filter-btn" data-filter="enterprise">Enterprise</button>
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="ai">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>AI-Powered Customer Support</h3>
-                        <p>Intelligent chatbot with natural language processing and sentiment analysis</p>
-                        <div class="portfolio-tech">
-                            <span>OpenAI GPT</span>
-                            <span>LangChain</span>
-                            <span>Python</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="ai">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-eye"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Computer Vision Analytics</h3>
-                        <p>Real-time object detection and tracking system for retail analytics</p>
-                        <div class="portfolio-tech">
-                            <span>TensorFlow</span>
-                            <span>OpenCV</span>
-                            <span>YOLO</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="ai">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-tags"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Data Labeling Platform</h3>
-                        <p>Scalable annotation platform for training machine learning models</p>
-                        <div class="portfolio-tech">
-                            <span>React</span>
-                            <span>FastAPI</span>
-                            <span>PostgreSQL</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="web">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>E-Commerce Platform</h3>
-                        <p>Full-stack e-commerce solution with AI-powered recommendations</p>
-                        <div class="portfolio-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>Stripe</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="mobile">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>AI Learning Assistant</h3>
-                        <p>Mobile app with AI tutoring and personalized learning paths</p>
-                        <div class="portfolio-tech">
-                            <span>React Native</span>
-                            <span>TensorFlow Lite</span>
-                            <span>Firebase</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="enterprise">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-building"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Intelligent HR System</h3>
-                        <p>AI-enhanced HR platform with automated candidate screening</p>
-                        <div class="portfolio-tech">
-                            <span>Django</span>
-                            <span>NLP</span>
-                            <span>Docker</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="ai">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Multi-Agent Automation</h3>
-                        <p>Intelligent agent system for workflow automation and task orchestration</p>
-                        <div class="portfolio-tech">
-                            <span>AutoGPT</span>
-                            <span>CrewAI</span>
-                            <span>Python</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="web">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-chart-bar"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>AI Analytics Dashboard</h3>
-                        <p>Real-time data visualization with predictive analytics and insights</p>
-                        <div class="portfolio-tech">
-                            <span>Vue.js</span>
-                            <span>D3.js</span>
-                            <span>MLflow</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="enterprise">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Healthcare AI Platform</h3>
-                        <p>AI-powered diagnostic assistance system for medical professionals</p>
-                        <div class="portfolio-tech">
-                            <span>TensorFlow</span>
-                            <span>DICOM</span>
-                            <span>React</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="enterprise">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Smart Manufacturing System</h3>
-                        <p>IoT-enabled production optimization with predictive maintenance</p>
-                        <div class="portfolio-tech">
-                            <span>Industrial IoT</span>
-                            <span>Time Series AI</span>
-                            <span>Edge Computing</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="ai">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-truck"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Logistics Optimization AI</h3>
-                        <p>Route optimization and supply chain intelligence for transportation companies</p>
-                        <div class="portfolio-tech">
-                            <span>Graph Neural Networks</span>
-                            <span>Optimization Algorithms</span>
-                            <span>Real-time Analytics</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="enterprise">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-microchip"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Smart IoT Agriculture Device</h3>
-                        <p>Complete product from software to hardware: soil monitoring device for farmers with mobile app</p>
-                        <div class="portfolio-tech">
-                            <span>IoT Hardware</span>
-                            <span>Mobile App</span>
-                            <span>Cloud Analytics</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="enterprise">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>AI-Powered Security Camera System</h3>
-                        <p>End-to-end product: AI camera hardware with facial recognition and mobile monitoring app</p>
-                        <div class="portfolio-tech">
-                            <span>Computer Vision</span>
-                            <span>Edge Computing</span>
-                            <span>Hardware Manufacturing</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item" data-category="web">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
-                    </div>
-                    <div class="portfolio-content">
-                        <h3>Wearable Health Monitor</h3>
-                        <p>Complete health tracking device with AI analysis, from prototype to market-ready product</p>
-                        <div class="portfolio-tech">
-                            <span>Wearable Tech</span>
-                            <span>Health AI</span>
-                            <span>Product Design</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Ready to bridge the gap? Let's start your journey</p>
-            </div>
-            
-            <!-- Meeting Scheduler Section -->
-            <div class="meeting-scheduler-section">
-                <div class="meeting-hero">
-                    <h2 class="meeting-title">Let's Talk About Your Project</h2>
-                    <p class="meeting-subtitle">"Share your project details with us, and we'll provide the support and expertise you need to make it online."</p>
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Some of Our Projects</h2>
                 </div>
-                
-                <div class="scheduler-container">
-                    <div class="meeting-info">
-                        <div class="meeting-card">
-                            <div class="meeting-header">
-                                <div class="host-info">
-                                    <div class="host-avatar">
-                                        <i class="fas fa-code" style="color: #667eea;"></i>
+                <div class="portfolio-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Apps</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="ai">AI & ML</button>
+                    <button class="filter-btn" data-filter="enterprise">Enterprise</button>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="ai">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>AI-Powered Customer Support</h3>
+                            <p>Intelligent chatbot with natural language processing and sentiment analysis</p>
+                            <div class="portfolio-tech">
+                                <span>OpenAI GPT</span>
+                                <span>LangChain</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="ai">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Computer Vision Analytics</h3>
+                            <p>Real-time object detection and tracking system for retail analytics</p>
+                            <div class="portfolio-tech">
+                                <span>TensorFlow</span>
+                                <span>OpenCV</span>
+                                <span>YOLO</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="ai">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-tags"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Data Labeling Platform</h3>
+                            <p>Scalable annotation platform for training machine learning models</p>
+                            <div class="portfolio-tech">
+                                <span>React</span>
+                                <span>FastAPI</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Full-stack e-commerce solution with AI-powered recommendations</p>
+                            <div class="portfolio-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="mobile">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>AI Learning Assistant</h3>
+                            <p>Mobile app with AI tutoring and personalized learning paths</p>
+                            <div class="portfolio-tech">
+                                <span>React Native</span>
+                                <span>TensorFlow Lite</span>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="enterprise">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-building"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Intelligent HR System</h3>
+                            <p>AI-enhanced HR platform with automated candidate screening</p>
+                            <div class="portfolio-tech">
+                                <span>Django</span>
+                                <span>NLP</span>
+                                <span>Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="ai">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Multi-Agent Automation</h3>
+                            <p>Intelligent agent system for workflow automation and task orchestration</p>
+                            <div class="portfolio-tech">
+                                <span>AutoGPT</span>
+                                <span>CrewAI</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>AI Analytics Dashboard</h3>
+                            <p>Real-time data visualization with predictive analytics and insights</p>
+                            <div class="portfolio-tech">
+                                <span>Vue.js</span>
+                                <span>D3.js</span>
+                                <span>MLflow</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="enterprise">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Healthcare AI Platform</h3>
+                            <p>AI-powered diagnostic assistance system for medical professionals</p>
+                            <div class="portfolio-tech">
+                                <span>TensorFlow</span>
+                                <span>DICOM</span>
+                                <span>React</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="enterprise">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Smart Manufacturing System</h3>
+                            <p>IoT-enabled production optimization with predictive maintenance</p>
+                            <div class="portfolio-tech">
+                                <span>Industrial IoT</span>
+                                <span>Time Series AI</span>
+                                <span>Edge Computing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="ai">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Logistics Optimization AI</h3>
+                            <p>Route optimization and supply chain intelligence for transportation companies</p>
+                            <div class="portfolio-tech">
+                                <span>Graph Neural Networks</span>
+                                <span>Optimization Algorithms</span>
+                                <span>Real-time Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="enterprise">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Smart IoT Agriculture Device</h3>
+                            <p>Complete product from software to hardware: soil monitoring device for farmers with
+                                mobile app</p>
+                            <div class="portfolio-tech">
+                                <span>IoT Hardware</span>
+                                <span>Mobile App</span>
+                                <span>Cloud Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="enterprise">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>AI-Powered Security Camera System</h3>
+                            <p>End-to-end product: AI camera hardware with facial recognition and mobile monitoring app
+                            </p>
+                            <div class="portfolio-tech">
+                                <span>Computer Vision</span>
+                                <span>Edge Computing</span>
+                                <span>Hardware Manufacturing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Wearable Health Monitor</h3>
+                            <p>Complete health tracking device with AI analysis, from prototype to market-ready product
+                            </p>
+                            <div class="portfolio-tech">
+                                <span>Wearable Tech</span>
+                                <span>Health AI</span>
+                                <span>Product Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Ready to harvest value? Let's start your journey</p>
+                </div>
+
+                <!-- Meeting Scheduler Section -->
+                <div class="meeting-scheduler-section">
+                    <div class="meeting-hero">
+                        <h2 class="meeting-title">Let's Talk About Your next Project</h2>
+                        <p class="meeting-subtitle">"Share your problem or pain pointswith us, and we'll provide the
+                            support and expertise you need to make it valuable solution."</p>
+                    </div>
+
+                    <div class="scheduler-container">
+                        <div class="meeting-info">
+                            <div class="meeting-card">
+                                <div class="meeting-header">
+                                    <div class="host-info">
+                                        <div class="host-avatar">
+                                            <i class="fas fa-code" style="color: #667eea;"></i>
+                                        </div>
+                                        <div class="host-details">
+                                            <h3>TheGeeksInfo Team</h3>
+                                            <h4>Meeting with Developers</h4>
+                                        </div>
                                     </div>
-                                    <div class="host-details">
-                                        <h3>TheGeeksInfo Team</h3>
-                                        <h4>Meeting with Developers</h4>
+                                </div>
+
+                                <div class="meeting-description">
+                                    <p>A quick video meeting to better understand your project and discuss how we can
+                                        assist you. Best regards, TheGeeksInfo.</p>
+                                </div>
+
+                                <div class="meeting-details">
+                                    <div class="meeting-detail">
+                                        <i class="fas fa-clock"></i>
+                                        <span>30 min</span>
+                                    </div>
+                                    <div class="meeting-detail">
+                                        <i class="fas fa-video"></i>
+                                        <span>Google Meet</span>
+                                    </div>
+                                    <div class="meeting-detail">
+                                        <i class="fas fa-globe"></i>
+                                        <span>Africa/Kampala</span>
+                                    </div>
+                                    <div class="meeting-detail">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Requires confirmation</span>
                                     </div>
                                 </div>
                             </div>
-                            
-                            <div class="meeting-description">
-                                <p>A quick video meeting to better understand your project and discuss how we can assist you. Best regards, TheGeeksInfo.</p>
-                            </div>
-                            
-                            <div class="meeting-details">
-                                <div class="meeting-detail">
-                                    <i class="fas fa-clock"></i>
-                                    <span>30 min</span>
-                                </div>
-                                <div class="meeting-detail">
-                                    <i class="fas fa-video"></i>
-                                    <span>Google Meet</span>
-                                </div>
-                                <div class="meeting-detail">
-                                    <i class="fas fa-globe"></i>
-                                    <span>Africa/Kampala</span>
-                                </div>
-                                <div class="meeting-detail">
-                                    <i class="fas fa-check-circle"></i>
-                                    <span>Requires confirmation</span>
-                                </div>
-                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="calendar-scheduler">
-                        <div class="calendar-container">
-                            <div class="calendar-header">
-                                <button class="nav-btn" id="prevMonth">
-                                    <i class="fas fa-chevron-left"></i>
+
+                        <div class="calendar-scheduler">
+                            <div class="calendar-container">
+                                <div class="calendar-header">
+                                    <button class="nav-btn" id="prevMonth">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </button>
+                                    <h3 id="currentMonth">July 2025</h3>
+                                    <button class="nav-btn" id="nextMonth">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+
+                                <div class="calendar-grid">
+                                    <div class="day-headers">
+                                        <div class="day-header">SUN</div>
+                                        <div class="day-header">MON</div>
+                                        <div class="day-header">TUE</div>
+                                        <div class="day-header">WED</div>
+                                        <div class="day-header">THU</div>
+                                        <div class="day-header">FRI</div>
+                                        <div class="day-header">SAT</div>
+                                    </div>
+
+                                    <div class="calendar-days" id="calendarDays">
+                                        <!-- Calendar days will be generated by JavaScript -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="time-slots" id="timeSlots" style="display: none;">
+                                <div class="time-header">
+                                    <h4 id="selectedDate">Select a date</h4>
+                                    <div class="time-format-toggle">
+                                        <button class="format-btn active" data-format="12">12h</button>
+                                        <button class="format-btn" data-format="24">24h</button>
+                                    </div>
+                                </div>
+                                <div class="time-grid" id="timeGrid">
+                                    <!-- Time slots will be generated by JavaScript -->
+                                </div>
+                                <button class="btn-primary schedule-btn" id="scheduleBtn"
+                                    style="width: 100%; margin-top: 20px; display: none;">
+                                    Schedule Meeting
                                 </button>
-                                <h3 id="currentMonth">July 2025</h3>
-                                <button class="nav-btn" id="nextMonth">
-                                    <i class="fas fa-chevron-right"></i>
-                                </button>
                             </div>
-                            
-                            <div class="calendar-grid">
-                                <div class="day-headers">
-                                    <div class="day-header">SUN</div>
-                                    <div class="day-header">MON</div>
-                                    <div class="day-header">TUE</div>
-                                    <div class="day-header">WED</div>
-                                    <div class="day-header">THU</div>
-                                    <div class="day-header">FRI</div>
-                                    <div class="day-header">SAT</div>
-                                </div>
-                                
-                                <div class="calendar-days" id="calendarDays">
-                                    <!-- Calendar days will be generated by JavaScript -->
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="time-slots" id="timeSlots" style="display: none;">
-                            <div class="time-header">
-                                <h4 id="selectedDate">Select a date</h4>
-                                <div class="time-format-toggle">
-                                    <button class="format-btn active" data-format="12">12h</button>
-                                    <button class="format-btn" data-format="24">24h</button>
-                                </div>
-                            </div>
-                            <div class="time-grid" id="timeGrid">
-                                <!-- Time slots will be generated by JavaScript -->
-                            </div>
-                            <button class="btn-primary schedule-btn" id="scheduleBtn" style="width: 100%; margin-top: 20px; display: none;">
-                                Schedule Meeting
-                            </button>
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>Whether you're a student looking to level up your skills or a business seeking innovative solutions, we're here to help.</p>
-                    
-                    <div class="contact-items">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>thegeeksinformation@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+256 (7706) 888-02</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>TheGeeks Hub, Entebbe-Uganda</span>
-                        </div>
-                    </div>
-                    
-                    <div class="social-links">
-                        <a href="#" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <form class="contact-form" id="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <select id="service" name="service" required>
-                            <option value="">Select a Service</option>
-                            <option value="development">Software Development</option>
-                            <option value="ai-ml">AI & Machine Learning</option>
-                            <option value="product-development">Product Development & Manufacturing</option>
-                            <option value="data-labeling">Data Labeling & Annotation</option>
-                            <option value="ai-agents">AI Agents & Automation</option>
-                            <option value="cross-domain">Cross-Domain TheGeeks</option>
-                            <option value="healthcare">Healthcare Technology</option>
-                            <option value="manufacturing">Manufacturing Solutions</option>
-                            <option value="logistics">Logistics & Supply Chain</option>
-                            <option value="training">Training Program</option>
-                            <option value="internship">Internship Program</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Tell us about your project or goals" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <div class="footer-logo-text">
-                            <i class="fas fa-code" style="margin-right: 8px; color: #667eea;"></i>
-                            <span>TheGeeksInfo</span>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>thegeeksinformation@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+256 (7706) 888-02</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>TheGeeks Hub, Entebbe-Uganda</span>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
                         </div>
                     </div>
-                    <p>Bridging the gap between Business and Technology through innovative software engineering and education.</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#services">Custom Development</a></li>
-                        <li><a href="#services">AI & Machine Learning</a></li>
-                        <li><a href="#services">Product Development</a></li>
-                        <li><a href="#services">Cross-Domain Solutions</a></li>
-                        <li><a href="#services">Healthcare Technology</a></li>
-                        <li><a href="#services">Manufacturing AI</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Programs</h4>
-                    <ul>
-                        <li><a href="#programs">Full-Stack Bootcamp</a></li>
-                        <li><a href="#programs">AI/ML Mastery</a></li>
-                        <li><a href="#programs">Product Development</a></li>
-                        <li><a href="#programs">Cross-Domain TheGeeks</a></li>
-                        <li><a href="#programs">Data Science</a></li>
-                        <li><a href="#programs">Industry Internships</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="#">Careers</a></li>
-                    </ul>
+
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="innovation">Innovation</option>
+                                <option value="digitalization">Digitalization</option>
+                                <option value="industrialization">Industrialization</option>
+                                <option value="ai">AI</option>
+                                <option value="iot">IoT</option>
+                                <option value="process-optimization">Process Optimization</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell us about your project or goals"
+                                rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
                 </div>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 TheGeeksInfo. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="pages/privacy.html">Privacy Policy</a>
-                    <a href="pages/terms.html">Terms of Service</a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <div class="footer-logo-text">
+                                <i class="fas fa-code" style="margin-right: 8px; color: #667eea;"></i>
+                                <span>TheGeeksInfo</span>
+                            </div>
+                        </div>
+                        <p>We innovate with responsibility, competence and vision to create real, sustainable and shared
+                            value.</p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Innovation</a></li>
+                            <li><a href="#services">Digitalization</a></li>
+                            <li><a href="#services">Industrialization</a></li>
+                            <li><a href="#services">AI</a></li>
+                            <li><a href="#services">IoT</a></li>
+                            <li><a href="#services">Process optimization</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">Who we are</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 TheGeeksInfo. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="pages/privacy.html">Privacy Policy</a>
+                        <a href="pages/terms.html">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Application Modal -->
+        <div id="applicationModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Apply for Program</h2>
+                    <span class="close-modal">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <div style="text-align: center; padding: 40px 20px;">
+                        <i class="fas fa-file-alt" style="font-size: 4rem; color: #667eea; margin-bottom: 20px;"></i>
+                        <h3 style="margin-bottom: 15px; color: #333;">Application Form</h3>
+                        <p style="margin-bottom: 30px; color: #666;">Click the button below to open our application form
+                            in a new tab.</p>
+                        <a href="https://docs.google.com/forms/d/1T7bWtCCtISizNi-lyKihouHgIbTaSfZRX2ah1Vn3dT4/viewform"
+                            target="_blank" class="btn-primary"
+                            style="display: inline-block; padding: 12px 24px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: transform 0.2s;"
+                            onmouseover="this.style.transform='translateY(-2px)'"
+                            onmouseout="this.style.transform='translateY(0)'">
+                            <i class="fas fa-external-link-alt" style="margin-right: 8px;"></i>
+                            Open Application Form
+                        </a>
+                        <p style="margin-top: 20px; font-size: 0.9rem; color: #888;">
+                            The form will open in a new tab for the best experience.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
 
-    <!-- Application Modal -->
-    <div id="applicationModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Apply for Program</h2>
-                <span class="close-modal">&times;</span>
-            </div>
-            <div class="modal-body">
-                <div style="text-align: center; padding: 40px 20px;">
-                    <i class="fas fa-file-alt" style="font-size: 4rem; color: #667eea; margin-bottom: 20px;"></i>
-                    <h3 style="margin-bottom: 15px; color: #333;">Application Form</h3>
-                    <p style="margin-bottom: 30px; color: #666;">Click the button below to open our application form in a new tab.</p>
-                    <a href="https://docs.google.com/forms/d/1T7bWtCCtISizNi-lyKihouHgIbTaSfZRX2ah1Vn3dT4/viewform" 
-                       target="_blank" 
-                       class="btn-primary" 
-                       style="display: inline-block; padding: 12px 24px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: transform 0.2s;"
-                       onmouseover="this.style.transform='translateY(-2px)'"
-                       onmouseout="this.style.transform='translateY(0)'">
-                        <i class="fas fa-external-link-alt" style="margin-right: 8px;"></i>
-                        Open Application Form
-                    </a>
-                    <p style="margin-top: 20px; font-size: 0.9rem; color: #888;">
-                        The form will open in a new tab for the best experience.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+        <!-- Scripts -->
+        <script src="assets/js/main.js"></script>
 
-    <!-- Scripts -->
-    <script src="assets/js/main.js"></script>
-    
-    <!-- Service Worker Registration -->
-    <script>
-        // Register Service Worker for PWA functionality
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(function(registration) {
-                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                        
-                        // Check for updates
-                        registration.addEventListener('updatefound', function() {
-                            const newWorker = registration.installing;
-                            
-                            newWorker.addEventListener('statechange', function() {
-                                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                                    // New version is available
-                                    if (confirm('A new version is available! Would you like to reload to get the latest features?')) {
-                                        newWorker.postMessage({ type: 'SKIP_WAITING' });
-                                        window.location.reload();
+        <!-- Service Worker Registration -->
+        <script>
+            // Register Service Worker for PWA functionality
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function () {
+                    navigator.serviceWorker.register('/sw.js')
+                        .then(function (registration) {
+                            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+
+                            // Check for updates
+                            registration.addEventListener('updatefound', function () {
+                                const newWorker = registration.installing;
+
+                                newWorker.addEventListener('statechange', function () {
+                                    if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                        // New version is available
+                                        if (confirm('A new version is available! Would you like to reload to get the latest features?')) {
+                                            newWorker.postMessage({ type: 'SKIP_WAITING' });
+                                            window.location.reload();
+                                        }
                                     }
-                                }
+                                });
                             });
+                        })
+                        .catch(function (err) {
+                            console.log('ServiceWorker registration failed: ', err);
                         });
-                    })
-                    .catch(function(err) {
-                        console.log('ServiceWorker registration failed: ', err);
+
+                    // Listen for service worker messages
+                    navigator.serviceWorker.addEventListener('message', function (event) {
+                        if (event.data.type === 'CACHE_UPDATED') {
+                            console.log('Cache has been updated');
+                        }
                     });
-                
-                // Listen for service worker messages
-                navigator.serviceWorker.addEventListener('message', function(event) {
-                    if (event.data.type === 'CACHE_UPDATED') {
-                        console.log('Cache has been updated');
-                    }
                 });
+            }
+
+            // PWA Install prompt
+            let deferredPrompt;
+            let installButton = null;
+
+            window.addEventListener('beforeinstallprompt', function (e) {
+                // Prevent Chrome 67 and earlier from automatically showing the prompt
+                e.preventDefault();
+
+                // Stash the event so it can be triggered later
+                deferredPrompt = e;
+
+                // Create and show install button
+                createInstallButton();
             });
-        }
-        
-        // PWA Install prompt
-        let deferredPrompt;
-        let installButton = null;
-        
-        window.addEventListener('beforeinstallprompt', function(e) {
-            // Prevent Chrome 67 and earlier from automatically showing the prompt
-            e.preventDefault();
-            
-            // Stash the event so it can be triggered later
-            deferredPrompt = e;
-            
-            // Create and show install button
-            createInstallButton();
-        });
-        
-        function createInstallButton() {
-            if (installButton) return; // Button already exists
-            
-            installButton = document.createElement('button');
-            installButton.textContent = '📱 Install App';
-            installButton.style.cssText = `
+
+            function createInstallButton() {
+                if (installButton) return; // Button already exists
+
+                installButton = document.createElement('button');
+                installButton.textContent = '📱 Install App';
+                installButton.style.cssText = `
                 position: fixed;
                 bottom: 20px;
                 right: 20px;
@@ -1129,65 +905,65 @@
                 transition: all 0.3s ease;
                 font-size: 14px;
             `;
-            
-            installButton.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-2px)';
-                this.style.boxShadow = '0 6px 20px rgba(0,0,0,0.3)';
-            });
-            
-            installButton.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
-                this.style.boxShadow = '0 4px 15px rgba(0,0,0,0.2)';
-            });
-            
-            installButton.addEventListener('click', function() {
-                // Hide the install button
-                installButton.style.display = 'none';
-                
-                // Show the install prompt
-                deferredPrompt.prompt();
-                
-                // Wait for the user to respond to the prompt
-                deferredPrompt.userChoice.then(function(choiceResult) {
-                    if (choiceResult.outcome === 'accepted') {
-                        console.log('User accepted the install prompt');
-                    } else {
-                        console.log('User dismissed the install prompt');
-                        // Show button again after 30 seconds if dismissed
-                        setTimeout(() => {
-                            if (installButton) {
-                                installButton.style.display = 'block';
-                            }
-                        }, 30000);
-                    }
-                    deferredPrompt = null;
+
+                installButton.addEventListener('mouseenter', function () {
+                    this.style.transform = 'translateY(-2px)';
+                    this.style.boxShadow = '0 6px 20px rgba(0,0,0,0.3)';
                 });
-            });
-            
-            document.body.appendChild(installButton);
-            
-            // Auto-hide after 10 seconds
-            setTimeout(() => {
-                if (installButton && installButton.style.display !== 'none') {
-                    installButton.style.opacity = '0.7';
-                }
-            }, 10000);
-        }
-        
-        // Handle successful app installation
-        window.addEventListener('appinstalled', function(evt) {
-            console.log('PWA was installed successfully');
-            
-            // Remove install button if it exists
-            if (installButton) {
-                installButton.remove();
-                installButton = null;
+
+                installButton.addEventListener('mouseleave', function () {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = '0 4px 15px rgba(0,0,0,0.2)';
+                });
+
+                installButton.addEventListener('click', function () {
+                    // Hide the install button
+                    installButton.style.display = 'none';
+
+                    // Show the install prompt
+                    deferredPrompt.prompt();
+
+                    // Wait for the user to respond to the prompt
+                    deferredPrompt.userChoice.then(function (choiceResult) {
+                        if (choiceResult.outcome === 'accepted') {
+                            console.log('User accepted the install prompt');
+                        } else {
+                            console.log('User dismissed the install prompt');
+                            // Show button again after 30 seconds if dismissed
+                            setTimeout(() => {
+                                if (installButton) {
+                                    installButton.style.display = 'block';
+                                }
+                            }, 30000);
+                        }
+                        deferredPrompt = null;
+                    });
+                });
+
+                document.body.appendChild(installButton);
+
+                // Auto-hide after 10 seconds
+                setTimeout(() => {
+                    if (installButton && installButton.style.display !== 'none') {
+                        installButton.style.opacity = '0.7';
+                    }
+                }, 10000);
             }
-            
-            // Show a thank you message
-            const notification = document.createElement('div');
-            notification.textContent = '🎉 App installed successfully!';
-            notification.style.cssText = `
+
+            // Handle successful app installation
+            window.addEventListener('appinstalled', function (evt) {
+                console.log('PWA was installed successfully');
+
+                // Remove install button if it exists
+                if (installButton) {
+                    installButton.remove();
+                    installButton = null;
+                }
+
+                // Show a thank you message
+                const notification = document.createElement('div');
+                notification.textContent = '🎉 App installed successfully!';
+                notification.style.cssText = `
                 position: fixed;
                 top: 20px;
                 right: 20px;
@@ -1199,64 +975,64 @@
                 z-index: 1001;
                 animation: slideIn 0.3s ease;
             `;
-            
-            // Add slide animation
-            const style = document.createElement('style');
-            style.textContent = `
+
+                // Add slide animation
+                const style = document.createElement('style');
+                style.textContent = `
                 @keyframes slideIn {
                     from { transform: translateX(100%); opacity: 0; }
                     to { transform: translateX(0); opacity: 1; }
                 }
             `;
-            document.head.appendChild(style);
-            
-            document.body.appendChild(notification);
-            
-            // Remove notification after 3 seconds
-            setTimeout(() => {
-                notification.remove();
-                style.remove();
-            }, 3000);
-        });
-        
-        // Offline form submission with background sync
-        function submitFormOffline(formData) {
-            if ('serviceWorker' in navigator && 'sync' in window.ServiceWorkerRegistration.prototype) {
-                // Store form data in IndexedDB for background sync
-                const request = indexedDB.open('TheGeeksInfoDB', 1);
-                
-                request.onupgradeneeded = function(event) {
-                    const db = event.target.result;
-                    if (!db.objectStoreNames.contains('formSubmissions')) {
-                        db.createObjectStore('formSubmissions', { keyPath: 'id', autoIncrement: true });
-                    }
-                };
-                
-                request.onsuccess = function(event) {
-                    const db = event.target.result;
-                    const transaction = db.transaction(['formSubmissions'], 'readwrite');
-                    const store = transaction.objectStore('formSubmissions');
-                    
-                    store.add({
-                        data: formData,
-                        timestamp: Date.now()
-                    });
-                    
-                    // Register background sync
-                    navigator.serviceWorker.ready.then(function(registration) {
-                        return registration.sync.register('contact-form-sync');
-                    });
-                    
-                    // Show offline message
-                    showOfflineMessage('Form saved! It will be submitted when you\'re back online.');
-                };
+                document.head.appendChild(style);
+
+                document.body.appendChild(notification);
+
+                // Remove notification after 3 seconds
+                setTimeout(() => {
+                    notification.remove();
+                    style.remove();
+                }, 3000);
+            });
+
+            // Offline form submission with background sync
+            function submitFormOffline(formData) {
+                if ('serviceWorker' in navigator && 'sync' in window.ServiceWorkerRegistration.prototype) {
+                    // Store form data in IndexedDB for background sync
+                    const request = indexedDB.open('TheGeeksInfoDB', 1);
+
+                    request.onupgradeneeded = function (event) {
+                        const db = event.target.result;
+                        if (!db.objectStoreNames.contains('formSubmissions')) {
+                            db.createObjectStore('formSubmissions', { keyPath: 'id', autoIncrement: true });
+                        }
+                    };
+
+                    request.onsuccess = function (event) {
+                        const db = event.target.result;
+                        const transaction = db.transaction(['formSubmissions'], 'readwrite');
+                        const store = transaction.objectStore('formSubmissions');
+
+                        store.add({
+                            data: formData,
+                            timestamp: Date.now()
+                        });
+
+                        // Register background sync
+                        navigator.serviceWorker.ready.then(function (registration) {
+                            return registration.sync.register('contact-form-sync');
+                        });
+
+                        // Show offline message
+                        showOfflineMessage('Form saved! It will be submitted when you\'re back online.');
+                    };
+                }
             }
-        }
-        
-        function showOfflineMessage(message) {
-            const notification = document.createElement('div');
-            notification.textContent = message;
-            notification.style.cssText = `
+
+            function showOfflineMessage(message) {
+                const notification = document.createElement('div');
+                notification.textContent = message;
+                notification.style.cssText = `
                 position: fixed;
                 top: 20px;
                 left: 50%;
@@ -1270,13 +1046,14 @@
                 max-width: 90%;
                 text-align: center;
             `;
-            
-            document.body.appendChild(notification);
-            
-            setTimeout(() => {
-                notification.remove();
-            }, 5000);
-        }
-    </script>
+
+                document.body.appendChild(notification);
+
+                setTimeout(() => {
+                    notification.remove();
+                }, 5000);
+            }
+        </script>
 </body>
+
 </html>

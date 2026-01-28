@@ -20,16 +20,16 @@
     --border-color: #e5e7eb;
     --shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 25px 50px rgba(0, 0, 0, 0.15);
-    
+
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-mono: 'Fira Code', 'Monaco', 'Cascadia Code', monospace;
-    
+
     /* Spacing */
     --section-padding: 100px 0;
     --container-padding: 0 20px;
     --max-width: 1200px;
-    
+
     /* Transitions */
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -50,7 +50,12 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 1rem;
@@ -265,10 +270,15 @@ p {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     position: relative;
     overflow: hidden;
+
+    /* Background image behind content and fixed for parallax-like effect */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/hero-a.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /* Ensure all text in hero is white */
@@ -283,6 +293,7 @@ p {
     visibility: visible;
 }
 
+/* Subtle decorative pattern on top of the image */
 .hero::before {
     content: '';
     position: absolute;
@@ -290,8 +301,27 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-    opacity: 0.5;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.6;
+}
+
+/* Overlay to increase text contrast */
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+/* Disable fixed background on small screens for performance/compatibility */
+@media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll;
+        background-position: center top;
+    }
 }
 
 .hero-container {
@@ -381,10 +411,25 @@ p {
     animation: codeTyping 2s ease-in-out infinite;
 }
 
-.code-line:nth-child(1) { width: 80%; animation-delay: 0s; }
-.code-line:nth-child(2) { width: 60%; animation-delay: 0.5s; }
-.code-line:nth-child(3) { width: 90%; animation-delay: 1s; }
-.code-line:nth-child(4) { width: 70%; animation-delay: 1.5s; }
+.code-line:nth-child(1) {
+    width: 80%;
+    animation-delay: 0s;
+}
+
+.code-line:nth-child(2) {
+    width: 60%;
+    animation-delay: 0.5s;
+}
+
+.code-line:nth-child(3) {
+    width: 90%;
+    animation-delay: 1s;
+}
+
+.code-line:nth-child(4) {
+    width: 70%;
+    animation-delay: 1.5s;
+}
 
 .hero-scroll {
     position: absolute;
@@ -433,10 +478,12 @@ section {
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 4rem;
-    align-items: center;
+    display: block;
+    /* Changed from grid to block since there is only one child */
+    max-width: 1000px;
+    /* Limit width for better readability */
+    margin: 0 auto;
+    /* Center the content */
 }
 
 .about-text h3 {
@@ -447,6 +494,12 @@ section {
 
 .about-text h3:first-child {
     margin-top: 0;
+}
+
+.about-text .section-subtitle {
+    text-align: left;
+    margin: 0 0 1rem 0;
+    max-width: 100%;
 }
 
 .stats {
@@ -480,15 +533,66 @@ section {
 }
 
 .image-placeholder {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    /* Changed from fixed 300px */
+    height: 100%;
+    /* Changed from fixed 300px */
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     border-radius: 20px;
+    /* Keep border radius */
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     font-size: 4rem;
+    overflow: hidden;
+    /* Ensure image stays within bounds */
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* Remove bottom space */
+}
+
+/* Vision Section */
+.vision-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+.vision-image {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    height: 100%;
+    min-height: 300px;
+}
+
+.vision-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .vision-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .vision-image {
+        order: -1;
+        /* Show image first on mobile if desired, or remove to keep text first */
+        min-height: 250px;
+    }
 }
 
 /* Services Section */
@@ -893,7 +997,8 @@ section {
     image-rendering: crisp-edges;
     image-rendering: -webkit-optimize-contrast;
     will-change: transform, opacity;
-    opacity: 0.9; /* Slightly transparent for better blending */
+    opacity: 0.9;
+    /* Slightly transparent for better blending */
     transform: translateZ(0);
     backface-visibility: hidden;
     min-width: 40px;
@@ -988,6 +1093,7 @@ section {
         opacity: 0;
         transform: translateZ(0) scale(0.95);
     }
+
     to {
         opacity: 1;
         transform: translateZ(0) scale(1);
@@ -1079,24 +1185,35 @@ section {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideIn {
-    from { 
+    from {
         transform: translateY(-50px);
         opacity: 0;
     }
-    to { 
+
+    to {
         transform: translateY(0);
         opacity: 1;
     }
 }
 
 @keyframes loading {
-    0% { background-position: 200% 0; }
-    100% { background-position: -200% 0; }
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
 }
 
 /* Mobile responsiveness for modal */
@@ -1105,15 +1222,15 @@ section {
         max-width: 95%;
         margin: 10px;
     }
-    
+
     .modal-header {
         padding: 15px 20px;
     }
-    
+
     .modal-header h2 {
         font-size: 1.25rem;
     }
-    
+
     .modal-body iframe {
         min-height: 500px;
     }
@@ -1617,34 +1734,34 @@ section {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-    
+
     .meeting-scheduler-section {
         padding: 40px 20px;
     }
-    
+
     .meeting-title {
         font-size: 2rem;
     }
-    
+
     .calendar-container,
     .time-slots {
         padding: 20px;
     }
-    
+
     .time-grid {
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     }
-    
+
     .host-avatar {
         width: 50px;
         height: 50px;
         font-size: 1.2rem;
     }
-    
+
     .host-details h3 {
         font-size: 1.1rem;
     }
-    
+
     .host-details h4 {
         font-size: 1rem;
     }
@@ -1654,12 +1771,12 @@ section {
     .calendar-days {
         gap: 1px;
     }
-    
+
     .calendar-day {
         min-height: 35px;
         font-size: 0.9rem;
     }
-    
+
     .time-slot {
         padding: 10px 6px;
         font-size: 0.8rem;

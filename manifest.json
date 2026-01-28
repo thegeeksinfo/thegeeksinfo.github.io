@@ -59,18 +59,7 @@
                 }
             ]
         },
-        {
-            "name": "Training Programs",
-            "short_name": "Programs",
-            "description": "Explore our training programs and bootcamps",
-            "url": "/#programs",
-            "icons": [
-                {
-                    "src": "assets/images/shortcut-programs.png",
-                    "sizes": "96x96"
-                }
-            ]
-        },
+
         {
             "name": "Contact Us",
             "short_name": "Contact",
