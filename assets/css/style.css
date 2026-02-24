@@ -275,7 +275,7 @@ p {
     overflow: hidden;
 
     /* Background image behind content and fixed for parallax-like effect */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/hero-a.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/hero-a.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
