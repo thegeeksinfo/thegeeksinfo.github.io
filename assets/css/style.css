@@ -811,6 +811,13 @@ section {
     margin-top: 2rem;
 }
 
+/* 2 columns on medium screens */
+@media (max-width: 900px) {
+    .approach-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* Ensure approach images have a stable aspect-ratio to prevent layout shifts */
 .approach-grid .portfolio-image {
     height: 0;
@@ -1691,6 +1698,10 @@ section {
     .portfolio-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+
+    .approach-grid {
+        grid-template-columns: 1fr !important;
     }
 
     .contact-content {
