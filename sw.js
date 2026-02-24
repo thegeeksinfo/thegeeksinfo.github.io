@@ -1,9 +1,9 @@
 // Service Worker for TheGeeksInfo Website - Full PWA Implementation
-// Version 1.2.0
+// Version 1.3.0
 
-const CACHE_NAME = 'thegeeksinfo-v1.2';
-const STATIC_CACHE_NAME = 'thegeeksinfo-static-v1.2';
-const DYNAMIC_CACHE_NAME = 'thegeeksinfo-dynamic-v1.2';
+const CACHE_NAME = 'thegeeksinfo-v1.3';
+const STATIC_CACHE_NAME = 'thegeeksinfo-static-v1.3';
+const DYNAMIC_CACHE_NAME = 'thegeeksinfo-dynamic-v1.3';
 
 // Define what to cache
 const STATIC_ASSETS = [
@@ -13,6 +13,11 @@ const STATIC_ASSETS = [
     '/assets/css/animations.css',
     '/assets/js/main.js',
     '/assets/images/logo300x300.png',
+    '/assets/images/hero-a.webp',
+    '/assets/images/vision.webp',
+    '/assets/images/intelligenza-artificiale-nella-PA-2-scaled-2.webp',
+    '/assets/images/shutterstock_1483438988-2.webp',
+    '/assets/images/visione-green-fanton-azienda.webp',
     '/manifest.json',
     // Add offline fallback page
     '/offline.html'

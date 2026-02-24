@@ -274,6 +274,9 @@ p {
     position: relative;
     overflow: hidden;
 
+    /* Fallback color while image loads */
+    background-color: #0f172a;
+
     /* Background image behind content and fixed for parallax-like effect */
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../images/hero-a.webp');
     background-size: cover;
@@ -800,6 +803,34 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+}
+
+/* Approach grid inside About: always 3 even columns */
+.approach-grid {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+}
+
+/* Ensure approach images have a stable aspect-ratio to prevent layout shifts */
+.approach-grid .portfolio-image {
+    height: 0;
+    padding-bottom: 60%;
+    position: relative;
+    overflow: hidden;
+}
+
+.approach-grid .portfolio-image .image-placeholder {
+    position: absolute;
+    inset: 0;
+    border-radius: 0;
+    background: none;
+}
+
+.approach-grid .portfolio-image .image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .portfolio-item {
