@@ -13,6 +13,7 @@ const STATIC_ASSETS = [
     '/assets/css/animations.css',
     '/assets/js/main.js',
     '/assets/images/logo300x300.png',
+    '/assets/images/logo-transparent.webp',
     '/assets/images/hero-a.webp',
     '/assets/images/vision.webp',
     '/assets/images/intelligenza-artificiale-nella-PA-2-scaled-2.webp',

@@ -83,9 +83,9 @@
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="#home">
-                    <img src="assets/images/logo300x300.png" alt="TheGeeksInfo Logo" class="logo-image" width="40"
-                        height="40" loading="eager" decoding="sync" fetchpriority="high" onload="this.style.opacity='1'"
-                        onerror="this.style.opacity='0.5'; console.warn('Logo load failed')">
+                    <img src="assets/images/logo-transparent.webp" alt="TheGeeksInfo Logo" class="logo-image" width="48"
+                        height="48" loading="eager" decoding="sync" fetchpriority="high"
+                        onerror="this.src='assets/images/logo300x300.png'">
                     <!-- <span>TheGeeksInfo</span> -->
                 </a>
             </div>
@@ -694,6 +694,13 @@
                     <div class="contact-info">
                         <h3>Let's Connect</h3>
 
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>thegeeksinformation@gmail.com</span>
+                            </div>
+                        </div>
+
                         <div class="social-links">
                             <a href="#" class="social-link">
                                 <i class="fab fa-linkedin"></i>
@@ -744,10 +751,10 @@
                 <div class="footer-content">
                     <div class="footer-section">
                         <div class="footer-logo">
-                            <div class="footer-logo-text">
-                                <i class="fas fa-code" style="margin-right: 8px; color: #667eea;"></i>
-                                <span>TheGeeksInfo</span>
-                            </div>
+                            <img src="assets/images/logo-transparent.webp" alt="TheGeeksInfo Logo" width="64" height="64"
+                                loading="lazy" style="filter: brightness(0) invert(1); display:block; margin-bottom:0.5rem;"
+                                onerror="this.style.display='none'">
+                            <span class="footer-brand-name">TheGeeksInfo</span>
                         </div>
                         <p>We innovate with responsibility, competence and vision to create real, sustainable and shared
                             value.</p>

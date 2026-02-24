@@ -198,22 +198,13 @@ p {
 }
 
 .nav-logo .logo-image {
-    width: 72px;
-    height: 72px;
+    width: 56px;
+    height: 56px;
     object-fit: contain;
     transition: var(--transition);
-    /* Ensure smooth loading and performance */
     background-color: transparent;
-    image-rendering: crisp-edges;
-    image-rendering: -webkit-optimize-contrast;
-    will-change: transform, opacity;
-    opacity: 0;
-    /* Force hardware acceleration */
+    will-change: transform;
     transform: translateZ(0);
-    backface-visibility: hidden;
-    /* Prevent layout shifts */
-    min-width: 72px;
-    min-height: 72px;
 }
 
 .nav-logo a:hover .logo-image {
@@ -906,8 +897,13 @@ section {
 
 .contact-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.contact-info {
+    padding-top: 1rem;
 }
 
 .contact-info h3 {
@@ -1007,51 +1003,25 @@ section {
 
 .footer-logo {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: 700;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
     margin-bottom: 1rem;
 }
 
-.footer-logo-text {
-    display: flex;
-    align-items: center;
+.footer-brand-name {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+.footer-logo-text {
+    display: none;
 }
 
 .footer-logo .logo-image {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-    /* Remove problematic filter and use mix-blend-mode instead */
-    filter: none;
-    mix-blend-mode: screen;
-    transition: var(--transition);
-    /* Enhanced performance for footer logo */
-    background-color: transparent;
-    image-rendering: crisp-edges;
-    image-rendering: -webkit-optimize-contrast;
-    will-change: transform, opacity;
-    opacity: 0.9;
-    /* Slightly transparent for better blending */
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    min-width: 40px;
-    min-height: 40px;
-    /* Additional fallback styles */
-    display: block;
-    visibility: visible;
-    /* Alternative approach for white logo on dark background */
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    padding: 4px;
-}
-
-.footer-logo:hover .logo-image {
-    transform: scale(1.1);
+    display: none;
 }
 
 .footer-section h4 {
@@ -1111,32 +1081,7 @@ section {
 }
 
 /* Loading state for logos */
-.logo-image:not([data-loaded="true"]) {
-    opacity: 0;
-    transform: translateZ(0) scale(0.95);
-}
 
-.logo-image[data-loaded="true"] {
-    opacity: 1;
-    transform: translateZ(0) scale(1);
-}
-
-/* Preload optimization */
-[data-logo-loaded="true"] .logo-image {
-    animation: logoFadeIn 0.3s ease-in-out;
-}
-
-@keyframes logoFadeIn {
-    from {
-        opacity: 0;
-        transform: translateZ(0) scale(0.95);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateZ(0) scale(1);
-    }
-}
 
 /* Application Modal Styles */
 .modal {
