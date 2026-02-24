@@ -198,8 +198,8 @@ p {
 }
 
 .nav-logo .logo-image {
-    width: 56px;
-    height: 56px;
+    width: 64px;
+    height: 64px;
     object-fit: contain;
     transition: var(--transition);
     background-color: transparent;
