@@ -5,27 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="TheGeeksInfo - Bridging the gap between Business and Technology through innovative software engineering services and education">
-    <meta name="keywords" content="software engineering, education, training, development, technology, startup">
+        content="TheGeeksInfo is a centre of expertise in AI, IoT and digital transformation — helping companies and public administrations turn emerging technologies into concrete, secure and sustainable solutions.">
+    <meta name="keywords" content="AI consulting, IoT solutions, digital transformation, artificial intelligence, Internet of Things, process optimisation, industry 4.0, technology innovation, AI Italy, digitalisation, TheGeeksInfo">
     <meta name="author" content="TheGeeksInfo">
-    <title>TheGeeksInfo</title>
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="canonical" href="https://geekyyouthsinfo.github.io/">
+    <title>TheGeeksInfo | AI, IoT &amp; Digital Transformation Experts</title>
 
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="TheGeeksInfo - Bridging Business & Technology">
+    <meta property="og:title" content="TheGeeksInfo | AI, IoT & Digital Transformation Experts">
     <meta property="og:description"
-        content="Innovative software engineering services and education that bridges the gap between business and technology">
+        content="A centre of expertise in AI, IoT and digital transformation. We help companies and public administrations build concrete, secure and sustainable technology solutions.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://geekyyouthsinfo.github.io">
-    <meta property="og:image" content="https://geekyyouthsinfo.github.io/assets/images/logo300x300.png">
-    <meta property="og:image:width" content="300">
-    <meta property="og:image:height" content="300">
+    <meta property="og:url" content="https://geekyyouthsinfo.github.io/">
+    <meta property="og:site_name" content="TheGeeksInfo">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://geekyyouthsinfo.github.io/assets/images/hero-a.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="TheGeeksInfo — AI, IoT & Digital Transformation">
 
     <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="TheGeeksInfo - Bridging Business & Technology">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TheGeeksInfo | AI, IoT & Digital Transformation Experts">
     <meta name="twitter:description"
-        content="Innovative software engineering services and education that bridges the gap between business and technology">
-    <meta name="twitter:image" content="https://geekyyouthsinfo.github.io/assets/images/logo300x300.png">
+        content="A centre of expertise in AI, IoT and digital transformation. Concrete, secure and sustainable technology solutions.">
+    <meta name="twitter:image" content="https://geekyyouthsinfo.github.io/assets/images/hero-a.webp">
+    <meta name="twitter:image:alt" content="TheGeeksInfo — AI, IoT & Digital Transformation">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/logo300x300.png">
@@ -38,28 +45,6 @@
     <!-- DNS prefetch for faster image loading -->
     <link rel="dns-prefetch" href="//geekyyouthsinfo.github.io">
 
-    <!-- Immediate logo preload script with optimization -->
-    <script>
-        // Preload logo with multiple strategies
-        (function () {
-            // Create image with cache busting only if needed
-            var img = new Image();
-            img.onload = function () {
-                // Mark logo as successfully preloaded
-                document.documentElement.setAttribute('data-logo-loaded', 'true');
-            };
-            img.onerror = function () {
-                // Retry with cache busting if initial load fails
-                var retryImg = new Image();
-                retryImg.src = 'assets/images/logo300x300.png?retry=' + Date.now();
-            };
-            img.src = 'assets/images/logo300x300.png';
-
-            // Preload favicon as well
-            var favicon = new Image();
-            favicon.src = 'assets/images/logo300x300.png';
-        })();
-    </script>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="manifest.json">
@@ -75,6 +60,65 @@
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animations.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://geekyyouthsinfo.github.io/#organization",
+          "name": "TheGeeksInfo",
+          "url": "https://geekyyouthsinfo.github.io/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://geekyyouthsinfo.github.io/assets/images/logo300x300.png",
+            "width": 300,
+            "height": 300
+          },
+          "description": "A centre of expertise in AI, IoT and digital transformation helping companies and public administrations build concrete, secure and sustainable technology solutions.",
+          "email": "thegeeksinformation@gmail.com",
+          "knowsAbout": ["Artificial Intelligence", "Internet of Things", "Digital Transformation", "Process Optimisation", "Industry 4.0", "Industrialization"],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Technology Services",
+            "itemListElement": [
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Innovation", "description": "Technology innovation consulting and strategy"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Digitalization", "description": "End-to-end digital transformation for companies and public bodies"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Industrialization", "description": "Industry 4.0 technology integration and deployment"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Artificial Intelligence", "description": "AI research, development and application solutions"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Internet of Things", "description": "IoT architecture design, integration and management"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Process Optimization", "description": "Data-driven process analysis and continuous improvement"}}
+            ]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://geekyyouthsinfo.github.io/#website",
+          "url": "https://geekyyouthsinfo.github.io/",
+          "name": "TheGeeksInfo",
+          "description": "AI, IoT & Digital Transformation Experts",
+          "publisher": {"@id": "https://geekyyouthsinfo.github.io/#organization"},
+          "inLanguage": "en-US"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://geekyyouthsinfo.github.io/#webpage",
+          "url": "https://geekyyouthsinfo.github.io/",
+          "name": "TheGeeksInfo | AI, IoT & Digital Transformation Experts",
+          "description": "A centre of expertise in AI, IoT and digital transformation.",
+          "isPartOf": {"@id": "https://geekyyouthsinfo.github.io/#website"},
+          "about": {"@id": "https://geekyyouthsinfo.github.io/#organization"},
+          "dateModified": "2026-02-26",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://geekyyouthsinfo.github.io/"}]
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
@@ -122,11 +166,11 @@
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="hero-title animate-fade-in">
-                    Technology
-                    <span class="gradient-text">that</span>
+                    Technology <span class="gradient-text">that generates value</span>
                 </h1>
                 <p class="hero-subtitle animate-fade-in-delay">
-                    generates value
+                    AI &middot; IoT &middot; Digital Transformation &middot; Process Optimisation
+                </p>
                 <div class="hero-buttons animate-fade-in-delay-2">
                     <a href="#services" class="btn-primary">Our Services</a>
                 </div>
@@ -211,7 +255,6 @@
                                     is to create Artificial Intelligence and IoT solutions that improve people’s lives
                                     and the competitiveness of organizations, while respecting social and environmental
                                     values.</p>
-                                <a href="#" class="read-more">Read more</a>
                             </div>
                         </div>
 
@@ -229,7 +272,6 @@
                                     engineering, data science, design and strategy. Through agile methodologies and
                                     industry standards, the company guarantees quality, reliability and scalability in
                                     every solution, transforming technological complexity into concrete value.</p>
-                                <a href="#" class="read-more">Read more</a>
                             </div>
                         </div>
 
@@ -247,7 +289,6 @@
                                     and social sustainability. AI and IoT technologies are designed as tools to optimize
                                     resources, reduce waste and support sustainable growth models for the benefit of the
                                     production system and the territory.</p>
-                                <a href="#" class="read-more">Read more</a>
                             </div>
                         </div>
                     </div>

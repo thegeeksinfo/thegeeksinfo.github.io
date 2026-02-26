@@ -1,9 +1,9 @@
 // Service Worker for TheGeeksInfo Website - Full PWA Implementation
 // Version 1.3.0
 
-const CACHE_NAME = 'thegeeksinfo-v1.3';
-const STATIC_CACHE_NAME = 'thegeeksinfo-static-v1.3';
-const DYNAMIC_CACHE_NAME = 'thegeeksinfo-dynamic-v1.3';
+const CACHE_NAME = 'thegeeksinfo-v1.4';
+const STATIC_CACHE_NAME = 'thegeeksinfo-static-v1.4';
+const DYNAMIC_CACHE_NAME = 'thegeeksinfo-dynamic-v1.4';
 
 // Define what to cache
 const STATIC_ASSETS = [
