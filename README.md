@@ -1,4 +1,4 @@
-# TheGeeksInfo - Technology that generate value
+# TheGeeksInfo - Technology that generates value
 
 
 **Made with ❤️ by TheGeeksInfo Team**
