@@ -1,4 +1,4 @@
-# TheGeeksInfo - Bridging Business & Technology
+# TheGeeksInfo - Technology that generate value
 
 
 **Made with ❤️ by TheGeeksInfo Team**
