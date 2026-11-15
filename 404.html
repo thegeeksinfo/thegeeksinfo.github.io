@@ -3,288 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Page Not Found | BEZ CRAFT</title>
-    <meta name="description" content="The page you're looking for doesn't exist. Return to BEZ CRAFT homepage.">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    
+    <title>Page not found | BEZ CRAFT</title>
+    <meta name="robots" content="noindex">
+    <link rel="icon" type="image/svg+xml" href="/assets/images/bezcraft-mark.svg">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/site.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
-        }
-        
-        .error-container {
-            max-width: 600px;
-        }
-        
-        .error-code {
-            font-size: 8rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #fff, rgba(255, 255, 255, 0.7));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            line-height: 1;
-        }
-        
-        .error-title {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-        
-        .error-message {
-            font-size: 1.25rem;
-            margin-bottom: 3rem;
-            opacity: 0.9;
-            line-height: 1.6;
-        }
-        
-        .action-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 3rem;
-        }
-        
-        .btn {
-            padding: 12px 24px;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-weight: 500;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .btn-primary {
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-        }
-        
-        .btn-primary:hover {
-            background: rgba(255, 255, 255, 0.3);
-            border-color: rgba(255, 255, 255, 0.5);
-            transform: translateY(-2px);
-        }
-        
-        .btn-secondary {
-            background: transparent;
-            color: white;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-        }
-        
-        .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(255, 255, 255, 0.5);
-            transform: translateY(-2px);
-        }
-        
-        .popular-links {
-            text-align: left;
-        }
-        
-        .popular-links h3 {
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-            text-align: center;
-        }
-        
-        .links-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-        }
-        
-        .link-item {
-            background: rgba(255, 255, 255, 0.1) !important;
-            padding: 1rem;
-            border-radius: 8px;
-            text-decoration: none;
-            color: white !important;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            border: none;
-        }
-        
-        .link-item:hover {
-            background: rgba(255, 255, 255, 0.2) !important;
-            transform: translateY(-2px);
-            color: white !important;
-        }
-        
-        .link-item i {
-            font-size: 1.25rem;
-            opacity: 0.8;
-            color: inherit !important;
-        }
-        
-        .link-item span {
-            color: inherit !important;
-        }
-        
-        .floating-shapes {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            overflow: hidden;
-            z-index: -1;
-        }
-        
-        .shape {
-            position: absolute;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            animation: float 6s ease-in-out infinite;
-        }
-        
-        .shape:nth-child(1) {
-            width: 80px;
-            height: 80px;
-            top: 20%;
-            left: 10%;
-            animation-delay: 0s;
-        }
-        
-        .shape:nth-child(2) {
-            width: 120px;
-            height: 120px;
-            top: 60%;
-            right: 10%;
-            animation-delay: 2s;
-        }
-        
-        .shape:nth-child(3) {
-            width: 60px;
-            height: 60px;
-            bottom: 20%;
-            left: 20%;
-            animation-delay: 4s;
-        }
-        
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .error-code {
-                font-size: 6rem;
-            }
-            
-            .error-title {
-                font-size: 2rem;
-            }
-            
-            .action-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .links-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+        .notfound { min-height: 100vh; display: grid; place-items: center; text-align: center; padding: 48px 16px; }
+        .notfound img { width: 104px; margin: 0 auto 28px; image-rendering: pixelated; }
+        .notfound .code { font-family: var(--mono); color: var(--accent); margin-bottom: 8px; }
+        .notfound .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 28px; }
     </style>
 </head>
 <body>
-    <div class="floating-shapes">
-        <div class="shape"></div>
-        <div class="shape"></div>
-        <div class="shape"></div>
-    </div>
-    
-    <div class="error-container">
-        <div class="error-code">404</div>
-        <h1 class="error-title">Page Not Found</h1>
-        <p class="error-message">
-            The page you're looking for seems to have taken a coffee break. 
-            Let's get you back on track to bridging the gap between business and technology!
-        </p>
-        
-        <div class="action-buttons">
-            <a href="/" class="btn btn-primary">
-                <i class="fas fa-home"></i>
-                Go Home
-            </a>
-            <a href="javascript:history.back()" class="btn btn-secondary">
-                <i class="fas fa-arrow-left"></i>
-                Go Back
-            </a>
-        </div>
-        
-        <div class="popular-links">
-            <h3>Popular Pages</h3>
-            <div class="links-grid">
-                <a href="/#services" class="link-item">
-                    <i class="fas fa-laptop-code"></i>
-                    <span>Our Services</span>
-                </a>
-                <a href="/#programs" class="link-item">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>Training Programs</span>
-                </a>
-                <a href="/#about" class="link-item">
-                    <i class="fas fa-users"></i>
-                    <span>About Us</span>
-                </a>
-                <a href="/#contact" class="link-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>Contact</span>
-                </a>
+    <main class="notfound">
+        <div>
+            <img src="/assets/images/bezcraft-mark.svg" alt="BEZ CRAFT logo" width="104" height="70">
+            <p class="code">Error 404</p>
+            <h1>Page not found</h1>
+            <p>The page you are looking for does not exist or has moved.</p>
+            <div class="actions">
+                <a class="btn btn-primary btn-lg" href="/">Go to homepage</a>
+                <a class="btn btn-secondary btn-lg" href="/#contact">Contact us</a>
             </div>
         </div>
-    </div>
-
-    <script>
-        // Search functionality
-        document.addEventListener('keydown', function(e) {
-            if (e.key === '/') {
-                e.preventDefault();
-                const searchTerm = prompt('Search for:');
-                if (searchTerm) {
-                    window.location.href = `/#search?q=${encodeURIComponent(searchTerm)}`;
-                }
-            }
-        });
-        
-        // Analytics
-        if (typeof gtag !== 'undefined') {
-            gtag('event', 'page_view', {
-                page_title: '404 - Page Not Found',
-                page_location: window.location.href
-            });
-        }
-    </script>
+    </main>
 </body>
 </html>

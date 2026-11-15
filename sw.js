@@ -1,24 +1,18 @@
 // Service Worker for BEZ CRAFT Website - Full PWA Implementation
 // Version 1.3.0
 
-const CACHE_NAME = 'bezcraft-v1.5';
-const STATIC_CACHE_NAME = 'bezcraft-static-v1.5';
-const DYNAMIC_CACHE_NAME = 'bezcraft-dynamic-v1.5';
+const CACHE_NAME = 'bezcraft-v2.0';
+const STATIC_CACHE_NAME = 'bezcraft-static-v2.0';
+const DYNAMIC_CACHE_NAME = 'bezcraft-dynamic-v2.0';
 
 // Define what to cache
 const STATIC_ASSETS = [
     '/',
     '/index.html',
-    '/assets/css/style.css',
-    '/assets/css/animations.css',
+    '/assets/css/site.css',
     '/assets/js/main.js',
     '/assets/images/logo300x300.png',
-    '/assets/images/logo-transparent.webp',
-    '/assets/images/hero-a.webp',
-    '/assets/images/vision.webp',
-    '/assets/images/intelligenza-artificiale-nella-PA-2-scaled-2.webp',
-    '/assets/images/shutterstock_1483438988-2.webp',
-    '/assets/images/visione-green-fanton-azienda.webp',
+    '/assets/images/bezcraft-mark.svg',
     '/manifest.json',
     // Add offline fallback page
     '/offline.html'
@@ -26,9 +20,7 @@ const STATIC_ASSETS = [
 
 // External resources to cache
 const EXTERNAL_ASSETS = [
-    'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap',
-    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
-    'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js'
+    'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap'
 ];
 
 // Install event - cache resources

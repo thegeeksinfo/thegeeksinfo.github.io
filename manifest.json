@@ -1,15 +1,18 @@
 {
-    "name": "BEZ CRAFT - Bridging Business & Technology",
+    "name": "BEZ CRAFT",
     "short_name": "BEZ CRAFT",
-    "description": "Innovative software engineering services and education that bridges the gap between Business and Technology",
+    "description": "Software, web and mobile applications, data and AI, and connected devices — BEZ CRAFT - SMC LTD, Entebbe, Uganda.",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
-    "theme_color": "#2563eb",
-    "orientation": "portrait-primary",
+    "theme_color": "#ffffff",
+    "orientation": "any",
     "scope": "/",
     "lang": "en-US",
-    "categories": ["education", "technology", "business"],
+    "categories": [
+        "business",
+        "technology"
+    ],
     "screenshots": [
         {
             "src": "assets/images/screenshot-desktop.png",
@@ -54,12 +57,11 @@
             "url": "/#services",
             "icons": [
                 {
-                    "src": "assets/images/shortcut-services.png",
+                    "src": "assets/images/logo300x300.png",
                     "sizes": "96x96"
                 }
             ]
         },
-
         {
             "name": "Contact Us",
             "short_name": "Contact",
@@ -67,7 +69,7 @@
             "url": "/#contact",
             "icons": [
                 {
-                    "src": "assets/images/shortcut-contact.png",
+                    "src": "assets/images/logo300x300.png",
                     "sizes": "96x96"
                 }
             ]
