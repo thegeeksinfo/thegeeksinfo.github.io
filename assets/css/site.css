@@ -139,14 +139,6 @@ p { margin: 0 0 1em; }
 .subhead { margin: 72px 0 24px; font-size: 1.35rem; }
 .steps li { background: var(--bg-alt); }
 
-.company-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: start; }
-.company-grid p { max-width: 34em; }
-.company-table { width: 100%; border-collapse: collapse; font-size: .95rem; }
-.company-table caption { text-align: left; font-weight: 600; color: var(--ink); padding-bottom: 12px; }
-.company-table th, .company-table td { text-align: left; vertical-align: top; padding: 13px 0; border-top: 1px solid var(--line); }
-.company-table tr:last-child th, .company-table tr:last-child td { border-bottom: 1px solid var(--line); }
-.company-table th { width: 38%; color: var(--muted); font-weight: 400; padding-right: 16px; }
-.company-table td { color: var(--ink); }
 
 /* Contact */
 .contact-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: start; }
@@ -184,7 +176,7 @@ p { margin: 0 0 1em; }
 
 /* Responsive */
 @media (max-width: 960px) {
-    .hero-grid, .company-grid, .contact-grid, .about-grid { grid-template-columns: 1fr; gap: 48px; }
+    .hero-grid, .contact-grid, .about-grid { grid-template-columns: 1fr; gap: 48px; }
     .pillars { grid-template-columns: 1fr; }
     .pillars article, .pillars article + article { padding: 24px 0 4px; border-left: 0; border-top: 1px solid var(--line); }
     .pillars article:first-child { border-top: 0; }
