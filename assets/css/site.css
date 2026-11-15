@@ -126,6 +126,19 @@ p { margin: 0 0 1em; }
 .sectors ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
 .sectors li { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 8px 14px; font-size: .95rem; color: var(--ink); }
 
+.about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 64px; align-items: start; }
+.about-grid > div p { max-width: 38em; }
+.vision { border-left: 3px solid var(--accent); padding: 4px 0 4px 32px; }
+.vision-quote { font-size: 1.3rem; line-height: 1.45; color: var(--ink); font-weight: 500; }
+.vision p:not(.vision-quote):not(.eyebrow) { color: var(--muted); }
+
+.pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 2px solid var(--ink); }
+.pillars article { padding: 28px 32px 8px 0; }
+.pillars article + article { padding-left: 32px; border-left: 1px solid var(--line); }
+.pillars p { color: var(--muted); }
+.subhead { margin: 72px 0 24px; font-size: 1.35rem; }
+.steps li { background: var(--bg-alt); }
+
 .company-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: start; }
 .company-grid p { max-width: 34em; }
 .company-table { width: 100%; border-collapse: collapse; font-size: .95rem; }
@@ -171,7 +184,10 @@ p { margin: 0 0 1em; }
 
 /* Responsive */
 @media (max-width: 960px) {
-    .hero-grid, .company-grid, .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+    .hero-grid, .company-grid, .contact-grid, .about-grid { grid-template-columns: 1fr; gap: 48px; }
+    .pillars { grid-template-columns: 1fr; }
+    .pillars article, .pillars article + article { padding: 24px 0 4px; border-left: 0; border-top: 1px solid var(--line); }
+    .pillars article:first-child { border-top: 0; }
     .services { grid-template-columns: 1fr 1fr; }
     .services li, .services li:not(:nth-child(3n+1)) { padding: 28px 24px 28px 0; border-left: 0; }
     .services li:nth-child(2n) { padding-left: 24px; border-left: 1px solid var(--line); }
