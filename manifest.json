@@ -1,6 +1,6 @@
 {
-    "name": "TheGeeksInfo - Bridging Business & Technology",
-    "short_name": "TheGeeksInfo",
+    "name": "BEZ CRAFT - Bridging Business & Technology",
+    "short_name": "BEZ CRAFT",
     "description": "Innovative software engineering services and education that bridges the gap between Business and Technology",
     "start_url": "/",
     "display": "standalone",
@@ -16,14 +16,14 @@
             "sizes": "1920x1080",
             "type": "image/png",
             "form_factor": "wide",
-            "label": "Desktop view of TheGeeksInfo homepage"
+            "label": "Desktop view of BEZ CRAFT homepage"
         },
         {
             "src": "assets/images/screenshot-mobile.png",
             "sizes": "390x844",
             "type": "image/png",
             "form_factor": "narrow",
-            "label": "Mobile view of TheGeeksInfo homepage"
+            "label": "Mobile view of BEZ CRAFT homepage"
         }
     ],
     "icons": [

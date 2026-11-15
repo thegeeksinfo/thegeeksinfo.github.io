@@ -1,9 +1,9 @@
-// Service Worker for TheGeeksInfo Website - Full PWA Implementation
+// Service Worker for BEZ CRAFT Website - Full PWA Implementation
 // Version 1.3.0
 
-const CACHE_NAME = 'thegeeksinfo-v1.4';
-const STATIC_CACHE_NAME = 'thegeeksinfo-static-v1.4';
-const DYNAMIC_CACHE_NAME = 'thegeeksinfo-dynamic-v1.4';
+const CACHE_NAME = 'bezcraft-v1.5';
+const STATIC_CACHE_NAME = 'bezcraft-static-v1.5';
+const DYNAMIC_CACHE_NAME = 'bezcraft-dynamic-v1.5';
 
 // Define what to cache
 const STATIC_ASSETS = [
@@ -300,7 +300,7 @@ async function syncContactForm() {
 // IndexedDB helpers for offline form submissions
 function getPendingSubmissions() {
     return new Promise((resolve, reject) => {
-        const request = indexedDB.open('TheGeeksInfoDB', 1);
+        const request = indexedDB.open('BezCraftDB', 1);
         
         request.onerror = () => reject(request.error);
         request.onsuccess = () => {
@@ -324,7 +324,7 @@ function getPendingSubmissions() {
 
 function removePendingSubmission(id) {
     return new Promise((resolve, reject) => {
-        const request = indexedDB.open('TheGeeksInfoDB', 1);
+        const request = indexedDB.open('BezCraftDB', 1);
         
         request.onsuccess = () => {
             const db = request.result;

@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://geekyyouthsinfo.github.io/sitemap.xml
+Sitemap: https://thegeeksinfo.github.io/sitemap.xml
 
 # Block access to development and sensitive files only
 Disallow: /node_modules/
@@ -11,4 +11,4 @@ Disallow: /.vscode/
 Disallow: /.env
 
 # SEO optimizations
-# Host: https://geekyyouthsinfo.github.io
+# Host: https://thegeeksinfo.github.io

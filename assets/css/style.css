@@ -1801,3 +1801,7 @@ section {
         font-size: 0.8rem;
     }
 }
+/* BEZ CRAFT brand additions */
+.nav-brand-name { font-weight: 700; font-size: 1.25rem; letter-spacing: .02em; margin-left: .5rem; color: inherit; vertical-align: middle; }
+.footer-legal { margin-top: 1rem; font-size: .85rem; line-height: 1.6; opacity: .85; }
+.contact-item a { color: inherit; text-decoration: none; }

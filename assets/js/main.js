@@ -1,4 +1,4 @@
-// Main JavaScript for TheGeeksInfo Website
+// Main JavaScript for BEZ CRAFT Website
 
 // DOM Elements
 const navbar = document.getElementById('navbar');
@@ -213,7 +213,7 @@ function initializeContactForm() {
         // Create mailto link to send email to thegeeksinformation@gmail.com
         const subject = encodeURIComponent(`New Contact Form Submission from ${name} - ${service}`);
         const body = encodeURIComponent(`
-Hello TheGeeksInfo Team,
+Hello BEZ CRAFT Team,
 
 You have received a new contact form submission from your website:
 
@@ -227,7 +227,7 @@ ${message}
 ---
 Please reply to this person at: ${email}
 
-This message was sent from the TheGeeksInfo contact form.
+This message was sent from the BEZ CRAFT contact form.
         `);
         
         const mailtoLink = `mailto:thegeeksinformation@gmail.com?subject=${subject}&body=${body}`;
@@ -831,7 +831,7 @@ class MeetingScheduler {
         
         // Create mailto link with meeting details
         const subject = encodeURIComponent('Meeting Request - Project Discussion');
-        const body = encodeURIComponent(`Hello TheGeeksInfo Team,
+        const body = encodeURIComponent(`Hello BEZ CRAFT Team,
 
 I would like to schedule a meeting to discuss my project.
 
