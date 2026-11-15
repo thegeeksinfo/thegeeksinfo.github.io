@@ -1,9 +1,9 @@
 // Service Worker for BEZ CRAFT Website - Full PWA Implementation
 // Version 1.3.0
 
-const CACHE_NAME = 'bezcraft-v2.0';
-const STATIC_CACHE_NAME = 'bezcraft-static-v2.0';
-const DYNAMIC_CACHE_NAME = 'bezcraft-dynamic-v2.0';
+const CACHE_NAME = 'bezcraft-v2.1';
+const STATIC_CACHE_NAME = 'bezcraft-static-v2.1';
+const DYNAMIC_CACHE_NAME = 'bezcraft-dynamic-v2.1';
 
 // Define what to cache
 const STATIC_ASSETS = [
@@ -12,6 +12,7 @@ const STATIC_ASSETS = [
     '/assets/css/site.css',
     '/assets/js/main.js',
     '/assets/images/logo300x300.png',
+    '/assets/images/icon-192.png',
     '/assets/images/bezcraft-mark.svg',
     '/manifest.json',
     // Add offline fallback page
